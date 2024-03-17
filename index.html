@@ -1,0 +1,16 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Recipe Finder</h1>
+    <form action="/search" method="post">
+        <input type="text" name="search_query" placeholder="Enter ingredients or category">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
